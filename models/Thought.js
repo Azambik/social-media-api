@@ -3,7 +3,7 @@ const { Schema, model, Types } = require('mongoose');
 const dateFormat = require('../utils/dateFormat');
 
 //defining reaction model
-const ReactionModel = new Schema({
+const ReactionSchema = new Schema({
     //custome id to avoid condusion with the __id of the parent thought
     reactionId: {
         type: Schema.Types.ObjectId,
