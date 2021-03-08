@@ -1,12 +1,12 @@
 // importing needed mongoose elements to set up models
-const { Schema, model, Types } = require('mongoose');
+const { Schema, model} = require('mongoose');
 //defining user model
 const UserSchema = new Schema({
     username: {
         type: String,
         unique: true,
         required: true,
-        trum: true
+        trim: true
     },
     email: {
         type: String,

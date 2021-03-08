@@ -31,7 +31,7 @@ const ReactionSchema = new Schema({
 });
 //defining thought model
 const ThoughtSchema = new Schema({
-    thoughText: {
+    thoughtText: {
         type: String,
         required: true,
         min:1,
@@ -49,6 +49,7 @@ const ThoughtSchema = new Schema({
         required: true
     },
     reactions: [ReactionSchema]
+
 },
 {
     toJSON: {
